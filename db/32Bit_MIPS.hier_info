@@ -1,0 +1,7 @@
+|dxp_mux2to1_v
+s => h.IN0
+x1 => ~NO_FANOUT~
+x2 => h.IN1
+f <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
