@@ -1,7 +1,0 @@
-|dxp_mux2to1_v
-s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
