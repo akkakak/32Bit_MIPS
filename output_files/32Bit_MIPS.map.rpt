@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 32Bit_MIPS
-Sun May 19 22:22:11 2019
+Mon May 27 15:11:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 19 22:22:11 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 27 15:11:21 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; 32Bit_MIPS                                  ;
-; Top-level Entity Name              ; dxp_mux2to1_v                               ;
+; Top-level Entity Name              ; srg_32Bit_CLA                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 1                                           ;
+; Total logic elements               ; 33                                          ;
+;     Total combinational functions  ; 33                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 4                                           ;
+; Total pins                         ; 98                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; dxp_mux2to1_v      ; 32Bit_MIPS         ;
+; Top-level entity name                                                      ; srg_32Bit_CLA      ; 32Bit_MIPS         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,49 +165,53 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; dxp_mux2to1_v.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v ;         ;
+; srg_32Bit_CLA.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1     ;
-;                                             ;       ;
-; Total combinational functions               ; 1     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 1     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 4     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; f~0   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 8     ;
-; Average fan-out                             ; 0.89  ;
-+---------------------------------------------+-------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 33           ;
+;                                             ;              ;
+; Total combinational functions               ; 33           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 31           ;
+;     -- 3 input functions                    ; 1            ;
+;     -- <=2 input functions                  ; 1            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 33           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 98           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; OpA[0]~input ;
+; Maximum fan-out                             ; 2            ;
+; Total fan-out                               ; 260          ;
+; Average fan-out                             ; 1.14         ;
++---------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
-; |dxp_mux2to1_v             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |dxp_mux2to1_v      ; dxp_mux2to1_v ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------+--------------+
+; |srg_32Bit_CLA             ; 33 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |srg_32Bit_CLA                     ; srg_32Bit_CLA ; work         ;
+;    |srg_8Bit_CLA:Block0|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_CLA|srg_8Bit_CLA:Block0 ; srg_8Bit_CLA  ; work         ;
+;    |srg_8Bit_CLA:Block1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_CLA|srg_8Bit_CLA:Block1 ; srg_8Bit_CLA  ; work         ;
+;    |srg_8Bit_CLA:Block2|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_CLA|srg_8Bit_CLA:Block2 ; srg_8Bit_CLA  ; work         ;
+;    |srg_8Bit_CLA:Block3|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_CLA|srg_8Bit_CLA:Block3 ; srg_8Bit_CLA  ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -231,10 +235,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 4                           ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 98                          ;
+; cycloneiii_lcell_comb ; 33                          ;
+;     normal            ; 33                          ;
+;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
+;         4 data inputs ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
 ; Average LUT depth     ; 1.00                        ;
@@ -246,7 +252,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -256,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun May 19 22:21:45 2019
+    Info: Processing started: Mon May 27 15:11:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 32Bit_MIPS -c 32Bit_MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -275,18 +281,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file dxp_4mu
 Info (12021): Found 2 design units, including 2 entities, in source file dxp_4bitadder_v.v
     Info (12023): Found entity 1: dxp_4bitadder File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_4bitadder_v.v Line: 1
     Info (12023): Found entity 2: fulladd File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_4bitadder_v.v Line: 15
-Info (12127): Elaborating entity "dxp_mux2to1_v" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file srg_32bit_mips.v
+    Info (12023): Found entity 1: srg_32Bit_MIPS File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_MIPS.v Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file srg_32bit_cla.v
+    Info (12023): Found entity 1: srg_32Bit_CLA File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v Line: 1
+    Info (12023): Found entity 2: srg_8Bit_CLA File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v Line: 28
+Info (12127): Elaborating entity "srg_32Bit_CLA" for the top level hierarchy
+Info (12128): Elaborating entity "srg_8Bit_CLA" for hierarchy "srg_8Bit_CLA:Block0" File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
+Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 33 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Sun May 19 22:22:12 2019
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Mon May 27 15:11:22 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
 
 

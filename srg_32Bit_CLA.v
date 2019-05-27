@@ -1,0 +1,51 @@
+module srg_32Bit_CLA(OpA, OpB, Result, Cout, cin);
+input [31:0] OpA, OpB;
+input cin;
+output [31:0] Result;
+output Cout;
+wire [3:0] g, p;
+wire c8, c16, c24;
+
+assign c8 = g[0] | p[0] & cin;
+assign c16 = g[1] | p[1] & g[0] | p[1] & p[0] & cin;
+assign c24 = g[2] | p[2] & g[1] | p[2] & p[1] & g[0] | p[2] & p[1] & p[0] & cin;
+assign Cout = g[3] | p[3] & g[2] | p[3] & p[2] & g[1] | p[3] & p[2] & p[1] & g[0] | p[3] & p[2] & p[1] & p[0] & cin;
+srg_8Bit_CLA Block0 (OpA[7:0], OpB[7:0], Result[7:0] , cin, g[0], p[0]);
+srg_8Bit_CLA Block1 (OpA[15:8], OpB[15:8], Result [15:8], c8, g[1], p[1]);
+srg_8Bit_CLA Block2 (OpA[23:16], OpB[23:16], Result[23:16], c16, g[2], p[2]);
+srg_8Bit_CLA Block3 (OpA[31:24], OpB[31:24], Result[31:24], c24, g[3], p[3]);
+
+
+
+
+
+
+
+endmodule 
+
+
+
+module srg_8Bit_CLA(A, B, Sum, Carryin, Generate, Propogate);
+input [7:0] A, B;
+input Carryin;
+output [7:0] Sum;
+wire [7:0] C, P, G;
+output Generate, Propogate;
+
+assign P= A & B;
+assign G= A | B;
+
+assign C[0]= Carryin;
+assign C[1]= G[0] | P[0]& C[0];
+assign C[2]= G[1] | P[1] & G[0] | P[1] & P[0]& C[0];
+assign C[3]= G[2] | P[2] & G[1] | P[2] & P[1] & G[0] | P[2] & P[1] & P[0]& C[0];
+assign C[4]= G[3] | P[3] & G[2] | P[3] & P[2] & G[1] | P[3] & P[2] & P[1] & G[0] | P[3] & P[2] & P[1] & P[0]& C[0];
+assign C[5]= G[4] | P[4] & G[3] | P[4] & P[3] & G[2] | P[4] & P[3] & P[2] & G[1] | P[4] & P[3] & P[2] & P[1] & G[0] | P[4] & P[3] & P[2] & P[1] & P[0]& C[0];
+assign C[6]= G[5] | P[5] & G[4] | P[5] & P[4] & G[3] | P[5] & P[4] & P[3] & G[2] | P[5] & P[4] & P[3] & P[2] & G[1] | P[5] & P[4] & P[3] & P[2] & P[1] & G[0] | P[5] & P[4] & P[3] & P[2] & P[1] & P[0]& C[0];
+assign C[7]= G[6] | P[6] & G[5] | P[6] & P[5] & G[4] | P[6] & P[5] & P[4] & G[3] | P[6] & P[5] & P[4] & P[3] & G[2] | P[6] & P[5] & P[4] & P[3] & P[2] & G[1] | P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & G[0] | P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & P[0]& C[0];
+//assign Carryout = G[7] | P[7] & G[6] | P[7]& P[6] & G[5] | P[7] & P[6] & P[5] & G[4] | P[7] &P[6] & P[5] & P[4] & G[3] | P[7] &P[6] & P[5] & P[4] & P[3] & G[2] | P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & G[1] | P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & G[0] | P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & P[0]& C[0];
+
+assign Generate = G[7] | P[7] & G[6] | P[7]& P[6] & G[5] | P[7] & P[6] & P[5] & G[4] | P[7] &P[6] & P[5] & P[4] & G[3] | P[7] &P[6] & P[5] & P[4] & P[3] & G[2] | P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & G[1] | P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & G[0];
+assign Propogate = P[7] & P[6] & P[5] & P[4] & P[3] & P[2] & P[1] & P[0];
+assign Sum = P^C;
+endmodule 
