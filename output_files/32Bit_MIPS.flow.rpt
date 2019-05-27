@@ -1,5 +1,5 @@
 Flow report for 32Bit_MIPS
-Mon May 27 19:09:30 2019
+Mon May 27 19:39:35 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May 27 19:09:30 2019       ;
+; Flow Status                        ; Flow Failed - Mon May 27 19:39:35 2019      ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; 32Bit_MIPS                                  ;
 ; Top-level Entity Name              ; srg_32Bit_ALU                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 128                                         ;
-;     Total combinational functions  ; 128                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 100                                         ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/27/2019 19:09:14 ;
+; Start date & time ; 05/27/2019 19:39:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 32Bit_MIPS          ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176527409023219.155899855315600        ; --            ; --            ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176527409023219.155900036012668        ; --            ; --            ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4750 MB             ; 00:00:35                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4730 MB             ; 00:00:33                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
