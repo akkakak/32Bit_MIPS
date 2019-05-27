@@ -1,5 +1,5 @@
 Flow report for 32Bit_MIPS
-Mon May 27 15:11:22 2019
+Mon May 27 19:09:30 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May 27 15:11:21 2019       ;
+; Flow Status                        ; Successful - Mon May 27 19:09:30 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; 32Bit_MIPS                                  ;
-; Top-level Entity Name              ; srg_32Bit_CLA                               ;
+; Top-level Entity Name              ; srg_32Bit_ALU                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 33                                          ;
-;     Total combinational functions  ; 33                                          ;
+; Total logic elements               ; 128                                         ;
+;     Total combinational functions  ; 128                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 98                                          ;
+; Total pins                         ; 100                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/27/2019 15:11:05 ;
+; Start date & time ; 05/27/2019 19:09:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 32Bit_MIPS          ;
 +-------------------+---------------------+
@@ -73,19 +73,19 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176527409023219.155898426517360        ; --            ; --            ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176527409023219.155899855315600        ; --            ; --            ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; srg_32Bit_CLA ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; srg_32Bit_CLA ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; srg_32Bit_CLA ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; srg_32Bit_CLA                          ; 32Bit_MIPS    ; --            ; --             ;
+; TOP_LEVEL_ENTITY                    ; srg_32Bit_ALU                          ; 32Bit_MIPS    ; --            ; --             ;
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
 
 
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4747 MB             ; 00:00:34                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4750 MB             ; 00:00:35                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

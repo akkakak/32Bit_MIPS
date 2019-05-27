@@ -4,395 +4,399 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Result[0]",
+					"name" : "Output[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[1]",
+					"name" : "Output[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[2]",
+					"name" : "Output[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[3]",
+					"name" : "Output[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[4]",
+					"name" : "Output[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[5]",
+					"name" : "Output[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[6]",
+					"name" : "Output[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[7]",
+					"name" : "Output[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[8]",
+					"name" : "Output[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[9]",
+					"name" : "Output[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[10]",
+					"name" : "Output[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[11]",
+					"name" : "Output[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[12]",
+					"name" : "Output[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[13]",
+					"name" : "Output[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[14]",
+					"name" : "Output[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[15]",
+					"name" : "Output[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[16]",
+					"name" : "Output[16]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[17]",
+					"name" : "Output[17]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[18]",
+					"name" : "Output[18]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[19]",
+					"name" : "Output[19]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[20]",
+					"name" : "Output[20]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[21]",
+					"name" : "Output[21]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[22]",
+					"name" : "Output[22]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[23]",
+					"name" : "Output[23]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[24]",
+					"name" : "Output[24]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[25]",
+					"name" : "Output[25]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[26]",
+					"name" : "Output[26]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[27]",
+					"name" : "Output[27]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[28]",
+					"name" : "Output[28]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[29]",
+					"name" : "Output[29]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[30]",
+					"name" : "Output[30]",
 					"strict" : false
 				},
 				{
-					"name" : "Result[31]",
+					"name" : "Output[31]",
 					"strict" : false
 				},
 				{
-					"name" : "Cout",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "cin",
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[0]",
+					"name" : "OperationSelect[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[0]",
+					"name" : "OperationSelect[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[1]",
+					"name" : "OperationSelect[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[1]",
+					"name" : "A[31]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[2]",
+					"name" : "B[31]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[2]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[3]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[3]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[4]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[4]",
+					"name" : "A[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[5]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[5]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[6]",
+					"name" : "A[4]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[6]",
+					"name" : "A[5]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[7]",
+					"name" : "B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[7]",
+					"name" : "B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[8]",
+					"name" : "A[6]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[8]",
+					"name" : "A[7]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[9]",
+					"name" : "B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[9]",
+					"name" : "B[8]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[10]",
+					"name" : "A[8]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[10]",
+					"name" : "A[9]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[11]",
+					"name" : "B[9]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[11]",
+					"name" : "B[10]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[12]",
+					"name" : "A[10]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[12]",
+					"name" : "A[11]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[13]",
+					"name" : "B[11]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[13]",
+					"name" : "B[12]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[14]",
+					"name" : "A[12]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[14]",
+					"name" : "A[13]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[15]",
+					"name" : "B[13]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[15]",
+					"name" : "B[14]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[16]",
+					"name" : "A[14]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[16]",
+					"name" : "A[15]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[17]",
+					"name" : "B[15]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[17]",
+					"name" : "B[16]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[18]",
+					"name" : "A[16]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[18]",
+					"name" : "A[17]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[19]",
+					"name" : "B[17]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[19]",
+					"name" : "B[18]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[20]",
+					"name" : "A[18]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[20]",
+					"name" : "A[19]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[21]",
+					"name" : "B[19]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[21]",
+					"name" : "B[20]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[22]",
+					"name" : "A[20]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[22]",
+					"name" : "A[21]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[23]",
+					"name" : "B[21]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[23]",
+					"name" : "B[22]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[24]",
+					"name" : "A[22]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[24]",
+					"name" : "A[23]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[25]",
+					"name" : "B[23]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[25]",
+					"name" : "B[24]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[26]",
+					"name" : "A[24]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[26]",
+					"name" : "A[25]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[27]",
+					"name" : "B[25]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[27]",
+					"name" : "B[26]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[28]",
+					"name" : "A[26]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[28]",
+					"name" : "A[27]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[29]",
+					"name" : "B[27]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[29]",
+					"name" : "B[28]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[30]",
+					"name" : "A[28]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[30]",
+					"name" : "A[29]",
 					"strict" : false
 				},
 				{
-					"name" : "OpA[31]",
+					"name" : "B[29]",
 					"strict" : false
 				},
 				{
-					"name" : "OpB[31]",
+					"name" : "B[30]",
+					"strict" : false
+				},
+				{
+					"name" : "A[30]",
 					"strict" : false
 				}
 			]
