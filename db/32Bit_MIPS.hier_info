@@ -66,39 +66,39 @@ B[31] => B[31].IN1
 OperationSelect[0] => OperationSelect[0].IN2
 OperationSelect[1] => OperationSelect[1].IN1
 OperationSelect[2] => OperationSelect[2].IN2
-Output[0] <= srg_32mux2to1:mux3.port3
-Output[1] <= srg_32mux2to1:mux3.port3
-Output[2] <= srg_32mux2to1:mux3.port3
-Output[3] <= srg_32mux2to1:mux3.port3
-Output[4] <= srg_32mux2to1:mux3.port3
-Output[5] <= srg_32mux2to1:mux3.port3
-Output[6] <= srg_32mux2to1:mux3.port3
-Output[7] <= srg_32mux2to1:mux3.port3
-Output[8] <= srg_32mux2to1:mux3.port3
-Output[9] <= srg_32mux2to1:mux3.port3
-Output[10] <= srg_32mux2to1:mux3.port3
-Output[11] <= srg_32mux2to1:mux3.port3
-Output[12] <= srg_32mux2to1:mux3.port3
-Output[13] <= srg_32mux2to1:mux3.port3
-Output[14] <= srg_32mux2to1:mux3.port3
-Output[15] <= srg_32mux2to1:mux3.port3
-Output[16] <= srg_32mux2to1:mux3.port3
-Output[17] <= srg_32mux2to1:mux3.port3
-Output[18] <= srg_32mux2to1:mux3.port3
-Output[19] <= srg_32mux2to1:mux3.port3
-Output[20] <= srg_32mux2to1:mux3.port3
-Output[21] <= srg_32mux2to1:mux3.port3
-Output[22] <= srg_32mux2to1:mux3.port3
-Output[23] <= srg_32mux2to1:mux3.port3
-Output[24] <= srg_32mux2to1:mux3.port3
-Output[25] <= srg_32mux2to1:mux3.port3
-Output[26] <= srg_32mux2to1:mux3.port3
-Output[27] <= srg_32mux2to1:mux3.port3
-Output[28] <= srg_32mux2to1:mux3.port3
-Output[29] <= srg_32mux2to1:mux3.port3
-Output[30] <= srg_32mux2to1:mux3.port3
-Output[31] <= srg_32mux2to1:mux3.port3
-Overflow <= <GND>
+Output[0] << srg_32mux2to1:mux3.port3
+Output[1] << srg_32mux2to1:mux3.port3
+Output[2] << srg_32mux2to1:mux3.port3
+Output[3] << srg_32mux2to1:mux3.port3
+Output[4] << srg_32mux2to1:mux3.port3
+Output[5] << srg_32mux2to1:mux3.port3
+Output[6] << srg_32mux2to1:mux3.port3
+Output[7] << srg_32mux2to1:mux3.port3
+Output[8] << srg_32mux2to1:mux3.port3
+Output[9] << srg_32mux2to1:mux3.port3
+Output[10] << srg_32mux2to1:mux3.port3
+Output[11] << srg_32mux2to1:mux3.port3
+Output[12] << srg_32mux2to1:mux3.port3
+Output[13] << srg_32mux2to1:mux3.port3
+Output[14] << srg_32mux2to1:mux3.port3
+Output[15] << srg_32mux2to1:mux3.port3
+Output[16] << srg_32mux2to1:mux3.port3
+Output[17] << srg_32mux2to1:mux3.port3
+Output[18] << srg_32mux2to1:mux3.port3
+Output[19] << srg_32mux2to1:mux3.port3
+Output[20] << srg_32mux2to1:mux3.port3
+Output[21] << srg_32mux2to1:mux3.port3
+Output[22] << srg_32mux2to1:mux3.port3
+Output[23] << srg_32mux2to1:mux3.port3
+Output[24] << srg_32mux2to1:mux3.port3
+Output[25] << srg_32mux2to1:mux3.port3
+Output[26] << srg_32mux2to1:mux3.port3
+Output[27] << srg_32mux2to1:mux3.port3
+Output[28] << srg_32mux2to1:mux3.port3
+Output[29] << srg_32mux2to1:mux3.port3
+Output[30] << srg_32mux2to1:mux3.port3
+Output[31] << srg_32mux2to1:mux3.port3
+Overflow << comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32Bit_CLA:Adder
@@ -516,225 +516,225 @@ f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[0].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[1].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[2].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[3].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[4].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[5].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[6].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[7].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[8].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[9].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[10].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[11].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[12].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[13].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[14].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[15].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[16].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[17].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[18].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[19].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[20].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[21].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[22].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[23].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[24].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[25].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[26].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[27].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[28].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[29].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[30].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[31].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -840,225 +840,225 @@ f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[0].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[1].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[2].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[3].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[4].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[5].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[6].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[7].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[8].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[9].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[10].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[11].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[12].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[13].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[14].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[15].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[16].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[17].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[18].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[19].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[20].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[21].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[22].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[23].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[24].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[25].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[26].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[27].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[28].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[29].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[30].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[31].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1164,225 +1164,225 @@ f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[0].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[1].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[2].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[3].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[4].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[5].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[6].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[7].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[8].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[9].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[10].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[11].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[12].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[13].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[14].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[15].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[16].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[17].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[18].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[19].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[20].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[21].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[22].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[23].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[24].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[25].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[26].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[27].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[28].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[29].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[30].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[31].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1488,225 +1488,225 @@ f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[0].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[1].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[2].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[3].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[4].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[5].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[6].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[7].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[8].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[9].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[10].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[11].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[12].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[13].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[14].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[15].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[16].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[17].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[18].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[19].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[20].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[21].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[22].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[23].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[24].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[25].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[26].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[27].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[28].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[29].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[30].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[31].stage0
 s => f.OUTPUTSELECT
-x1 => f.DATAB
-x2 => f.DATAA
+x1 => f.DATAA
+x2 => f.DATAB
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 

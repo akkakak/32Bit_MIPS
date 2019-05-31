@@ -1,5 +1,5 @@
 Flow report for 32Bit_MIPS
-Mon May 27 19:39:35 2019
+Fri May 31 16:41:09 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon May 27 19:39:35 2019      ;
+; Flow Status                        ; Successful - Fri May 31 16:41:09 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; 32Bit_MIPS                                  ;
 ; Top-level Entity Name              ; srg_32Bit_ALU                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 129                                         ;
+;     Total combinational functions  ; 129                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 100                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -62,31 +62,37 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/27/2019 19:39:21 ;
+; Start date & time ; 05/31/2019 16:40:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 32Bit_MIPS          ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                              ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176527409023219.155900036012668        ; --            ; --            ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; srg_32Bit_ALU                          ; 32Bit_MIPS    ; --            ; --             ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id       ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 176527409023219.155933525214896        ; --            ; --            ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; srg_32Bit_ALU_tb ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; srg_32Bit_ALU_tb                       ; --            ; --            ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --            ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; srg_32Bit_ALU_tb.v                     ; --            ; --            ; srg_32Bit_ALU_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; srg_32Bit_ALU_tb                       ; --            ; --            ; srg_32Bit_ALU_tb ;
+; EDA_TEST_BENCH_NAME                  ; srg_32Bit_ALU_tb                       ; --            ; --            ; eda_simulation   ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation   ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top              ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; srg_32Bit_ALU ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --            ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --               ;
+; TOP_LEVEL_ENTITY                     ; srg_32Bit_ALU                          ; 32Bit_MIPS    ; --            ; --               ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -94,8 +100,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4730 MB             ; 00:00:33                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4750 MB             ; 00:00:36                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

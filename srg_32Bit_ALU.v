@@ -22,5 +22,5 @@ srg_32mux2to1 mux1 ( OperationSelect[0], AndOutput, OrOutput, LogicOutput); // S
 srg_32mux2to1 mux2 ( OperationSelect[0], AdderOutput, {32{carryout}}, ArithmeticOutput); // selects for either the result of the addition/subtraction, or outputs the carryout bit for the set if less than instruction  
 srg_32mux2to1 mux3 ( OperationSelect[1], LogicOutput, ArithmeticOutput, Output);// selects either the logical block output or arithmetic block output
 xor(intermediateoverflow, carryout, AdderOutput[31]);
-and( overflow, intermediateoverflow, OperationSelect[1]);
+and( Overflow, intermediateoverflow, OperationSelect[1]);
 endmodule
