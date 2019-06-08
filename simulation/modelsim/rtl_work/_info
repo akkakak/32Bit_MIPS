@@ -9,138 +9,138 @@ z2
 cModel Technology
 Z0 dC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/simulation/modelsim
 vdxp_mux2to1_v
-!s110 1559335368
+Z1 !s110 1559999537
 !i10b 1
 !s100 8Da<zHfZF1bkR;SZ^H6E]0
 IZ_dSF0n^_8_>@^V<[R5]b0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1559333357
 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v
 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v
 L0 1
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z3 !s108 1559335368.000000
+Z4 !s108 1559999537.000000
 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS
-Z6 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS
+Z7 tCvgOpt 0
 vsrg_32Bit_ALU
-Z7 !s110 1559335369
+R1
 !i10b 1
 !s100 h^NEXH4S@oC6=ce@6N8C42
 Ifc99a:E5nC5;BI3J7;7Hl1
-R1
+R2
 R0
 w1559333123
 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v
 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-Z8 !s108 1559335369.000000
+R4
 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v|
 !i113 1
-R4
 R5
 R6
+R7
 nsrg_32@bit_@a@l@u
 vsrg_32Bit_ALU_tb
-R7
+!s110 1559999538
 !i10b 1
 !s100 MSe87]<lFZJKoz7D3hej`1
 I@X26_ILPQI2UlJFQ;Y6]H2
-R1
+R2
 R0
 w1559335251
 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU_tb.v
 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU_tb.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU_tb.v|
 !i113 1
-R4
 R5
 R6
+R7
 nsrg_32@bit_@a@l@u_tb
 vsrg_32Bit_CLA
-R7
-!i10b 1
-!s100 8W@bf802e3[8ZX9G:eOK21
-IUzJELQhfMB20M2^G`m_Vc0
 R1
-R0
-Z9 w1558984263
-Z10 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v
-Z11 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v
-L0 1
+!i10b 1
+!s100 3nHQ3Q;nAdPoCf7Eigji`3
+ITln`]1U@d6dEh<^lZ6?SI0
 R2
+R0
+Z8 w1559999436
+Z9 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v
+Z10 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v
+L0 1
+R3
 r1
 !s85 0
 31
-R3
-Z12 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v|
-Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v|
-!i113 1
 R4
+Z11 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v|
+!i113 1
 R5
 R6
+R7
 nsrg_32@bit_@c@l@a
 vsrg_32mux2to1
-R7
+R1
 !i10b 1
 !s100 f3CzgNUi2l[d[:zR32hDh3
 IGJJU0k5;;S9U^;hVOM7Xd0
-R1
+R2
 R0
 w1558995993
 8C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v
 FC:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS|C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v|
 !i113 1
-R4
 R5
 R6
-vsrg_8Bit_CLA
 R7
-!i10b 1
-!s100 3]jn0OZmzXnKBQcZad39Y1
-ImV^ZonkiQgKG7TGc6X:MP0
+vsrg_8Bit_CLA
 R1
+!i10b 1
+!s100 @bLUSL@k9:fESUnZILz6A0
+I?Y^44>zlYR^ldOJ2mhVZH0
+R2
 R0
+R8
 R9
 R10
-R11
 L0 28
-R2
+R3
 r1
 !s85 0
 31
-R3
-R12
-R13
-!i113 1
 R4
+R11
+R12
+!i113 1
 R5
 R6
+R7
 nsrg_8@bit_@c@l@a

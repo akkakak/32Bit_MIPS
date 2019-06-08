@@ -1,1712 +1,450 @@
-|srg_32Bit_ALU
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-A[4] => A[4].IN1
-A[5] => A[5].IN1
-A[6] => A[6].IN1
-A[7] => A[7].IN1
-A[8] => A[8].IN1
-A[9] => A[9].IN1
-A[10] => A[10].IN1
-A[11] => A[11].IN1
-A[12] => A[12].IN1
-A[13] => A[13].IN1
-A[14] => A[14].IN1
-A[15] => A[15].IN1
-A[16] => A[16].IN1
-A[17] => A[17].IN1
-A[18] => A[18].IN1
-A[19] => A[19].IN1
-A[20] => A[20].IN1
-A[21] => A[21].IN1
-A[22] => A[22].IN1
-A[23] => A[23].IN1
-A[24] => A[24].IN1
-A[25] => A[25].IN1
-A[26] => A[26].IN1
-A[27] => A[27].IN1
-A[28] => A[28].IN1
-A[29] => A[29].IN1
-A[30] => A[30].IN1
-A[31] => A[31].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-B[4] => B[4].IN1
-B[5] => B[5].IN1
-B[6] => B[6].IN1
-B[7] => B[7].IN1
-B[8] => B[8].IN1
-B[9] => B[9].IN1
-B[10] => B[10].IN1
-B[11] => B[11].IN1
-B[12] => B[12].IN1
-B[13] => B[13].IN1
-B[14] => B[14].IN1
-B[15] => B[15].IN1
-B[16] => B[16].IN1
-B[17] => B[17].IN1
-B[18] => B[18].IN1
-B[19] => B[19].IN1
-B[20] => B[20].IN1
-B[21] => B[21].IN1
-B[22] => B[22].IN1
-B[23] => B[23].IN1
-B[24] => B[24].IN1
-B[25] => B[25].IN1
-B[26] => B[26].IN1
-B[27] => B[27].IN1
-B[28] => B[28].IN1
-B[29] => B[29].IN1
-B[30] => B[30].IN1
-B[31] => B[31].IN1
-OperationSelect[0] => OperationSelect[0].IN2
-OperationSelect[1] => OperationSelect[1].IN1
-OperationSelect[2] => OperationSelect[2].IN2
-Output[0] << srg_32mux2to1:mux3.port3
-Output[1] << srg_32mux2to1:mux3.port3
-Output[2] << srg_32mux2to1:mux3.port3
-Output[3] << srg_32mux2to1:mux3.port3
-Output[4] << srg_32mux2to1:mux3.port3
-Output[5] << srg_32mux2to1:mux3.port3
-Output[6] << srg_32mux2to1:mux3.port3
-Output[7] << srg_32mux2to1:mux3.port3
-Output[8] << srg_32mux2to1:mux3.port3
-Output[9] << srg_32mux2to1:mux3.port3
-Output[10] << srg_32mux2to1:mux3.port3
-Output[11] << srg_32mux2to1:mux3.port3
-Output[12] << srg_32mux2to1:mux3.port3
-Output[13] << srg_32mux2to1:mux3.port3
-Output[14] << srg_32mux2to1:mux3.port3
-Output[15] << srg_32mux2to1:mux3.port3
-Output[16] << srg_32mux2to1:mux3.port3
-Output[17] << srg_32mux2to1:mux3.port3
-Output[18] << srg_32mux2to1:mux3.port3
-Output[19] << srg_32mux2to1:mux3.port3
-Output[20] << srg_32mux2to1:mux3.port3
-Output[21] << srg_32mux2to1:mux3.port3
-Output[22] << srg_32mux2to1:mux3.port3
-Output[23] << srg_32mux2to1:mux3.port3
-Output[24] << srg_32mux2to1:mux3.port3
-Output[25] << srg_32mux2to1:mux3.port3
-Output[26] << srg_32mux2to1:mux3.port3
-Output[27] << srg_32mux2to1:mux3.port3
-Output[28] << srg_32mux2to1:mux3.port3
-Output[29] << srg_32mux2to1:mux3.port3
-Output[30] << srg_32mux2to1:mux3.port3
-Output[31] << srg_32mux2to1:mux3.port3
-Overflow << comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32Bit_CLA:Adder
-OpA[0] => OpA[0].IN1
-OpA[1] => OpA[1].IN1
-OpA[2] => OpA[2].IN1
-OpA[3] => OpA[3].IN1
-OpA[4] => OpA[4].IN1
-OpA[5] => OpA[5].IN1
-OpA[6] => OpA[6].IN1
-OpA[7] => OpA[7].IN1
-OpA[8] => OpA[8].IN1
-OpA[9] => OpA[9].IN1
-OpA[10] => OpA[10].IN1
-OpA[11] => OpA[11].IN1
-OpA[12] => OpA[12].IN1
-OpA[13] => OpA[13].IN1
-OpA[14] => OpA[14].IN1
-OpA[15] => OpA[15].IN1
-OpA[16] => OpA[16].IN1
-OpA[17] => OpA[17].IN1
-OpA[18] => OpA[18].IN1
-OpA[19] => OpA[19].IN1
-OpA[20] => OpA[20].IN1
-OpA[21] => OpA[21].IN1
-OpA[22] => OpA[22].IN1
-OpA[23] => OpA[23].IN1
-OpA[24] => OpA[24].IN1
-OpA[25] => OpA[25].IN1
-OpA[26] => OpA[26].IN1
-OpA[27] => OpA[27].IN1
-OpA[28] => OpA[28].IN1
-OpA[29] => OpA[29].IN1
-OpA[30] => OpA[30].IN1
-OpA[31] => OpA[31].IN1
-OpB[0] => OpB[0].IN1
-OpB[1] => OpB[1].IN1
-OpB[2] => OpB[2].IN1
-OpB[3] => OpB[3].IN1
-OpB[4] => OpB[4].IN1
-OpB[5] => OpB[5].IN1
-OpB[6] => OpB[6].IN1
-OpB[7] => OpB[7].IN1
-OpB[8] => OpB[8].IN1
-OpB[9] => OpB[9].IN1
-OpB[10] => OpB[10].IN1
-OpB[11] => OpB[11].IN1
-OpB[12] => OpB[12].IN1
-OpB[13] => OpB[13].IN1
-OpB[14] => OpB[14].IN1
-OpB[15] => OpB[15].IN1
-OpB[16] => OpB[16].IN1
-OpB[17] => OpB[17].IN1
-OpB[18] => OpB[18].IN1
-OpB[19] => OpB[19].IN1
-OpB[20] => OpB[20].IN1
-OpB[21] => OpB[21].IN1
-OpB[22] => OpB[22].IN1
-OpB[23] => OpB[23].IN1
-OpB[24] => OpB[24].IN1
-OpB[25] => OpB[25].IN1
-OpB[26] => OpB[26].IN1
-OpB[27] => OpB[27].IN1
-OpB[28] => OpB[28].IN1
-OpB[29] => OpB[29].IN1
-OpB[30] => OpB[30].IN1
-OpB[31] => OpB[31].IN1
-Result[0] <= srg_8Bit_CLA:Block0.port2
-Result[1] <= srg_8Bit_CLA:Block0.port2
-Result[2] <= srg_8Bit_CLA:Block0.port2
-Result[3] <= srg_8Bit_CLA:Block0.port2
-Result[4] <= srg_8Bit_CLA:Block0.port2
-Result[5] <= srg_8Bit_CLA:Block0.port2
-Result[6] <= srg_8Bit_CLA:Block0.port2
-Result[7] <= srg_8Bit_CLA:Block0.port2
-Result[8] <= srg_8Bit_CLA:Block1.port2
-Result[9] <= srg_8Bit_CLA:Block1.port2
-Result[10] <= srg_8Bit_CLA:Block1.port2
-Result[11] <= srg_8Bit_CLA:Block1.port2
-Result[12] <= srg_8Bit_CLA:Block1.port2
-Result[13] <= srg_8Bit_CLA:Block1.port2
-Result[14] <= srg_8Bit_CLA:Block1.port2
-Result[15] <= srg_8Bit_CLA:Block1.port2
-Result[16] <= srg_8Bit_CLA:Block2.port2
-Result[17] <= srg_8Bit_CLA:Block2.port2
-Result[18] <= srg_8Bit_CLA:Block2.port2
-Result[19] <= srg_8Bit_CLA:Block2.port2
-Result[20] <= srg_8Bit_CLA:Block2.port2
-Result[21] <= srg_8Bit_CLA:Block2.port2
-Result[22] <= srg_8Bit_CLA:Block2.port2
-Result[23] <= srg_8Bit_CLA:Block2.port2
-Result[24] <= srg_8Bit_CLA:Block3.port2
-Result[25] <= srg_8Bit_CLA:Block3.port2
-Result[26] <= srg_8Bit_CLA:Block3.port2
-Result[27] <= srg_8Bit_CLA:Block3.port2
-Result[28] <= srg_8Bit_CLA:Block3.port2
-Result[29] <= srg_8Bit_CLA:Block3.port2
-Result[30] <= srg_8Bit_CLA:Block3.port2
-Result[31] <= srg_8Bit_CLA:Block3.port2
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-cin => cin.IN1
-
-
-|srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block0
-A[0] => P[0].IN0
-A[0] => G[0].IN0
-A[1] => P[1].IN0
-A[1] => G[1].IN0
-A[2] => P[2].IN0
-A[2] => G[2].IN0
-A[3] => P[3].IN0
-A[3] => G[3].IN0
-A[4] => P[4].IN0
-A[4] => G[4].IN0
-A[5] => P[5].IN0
-A[5] => G[5].IN0
-A[6] => P[6].IN0
-A[6] => G[6].IN0
-A[7] => P[7].IN0
-A[7] => G[7].IN0
-B[0] => P[0].IN1
-B[0] => G[0].IN1
-B[1] => P[1].IN1
-B[1] => G[1].IN1
-B[2] => P[2].IN1
-B[2] => G[2].IN1
-B[3] => P[3].IN1
-B[3] => G[3].IN1
-B[4] => P[4].IN1
-B[4] => G[4].IN1
-B[5] => P[5].IN1
-B[5] => G[5].IN1
-B[6] => P[6].IN1
-B[6] => G[6].IN1
-B[7] => P[7].IN1
-B[7] => G[7].IN1
-Sum[0] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[1] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[2] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[3] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[4] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[5] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[6] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[7] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => Sum.IN1
-Generate <= Generate.DB_MAX_OUTPUT_PORT_TYPE
-Propogate <= Propogate.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block1
-A[0] => P[0].IN0
-A[0] => G[0].IN0
-A[1] => P[1].IN0
-A[1] => G[1].IN0
-A[2] => P[2].IN0
-A[2] => G[2].IN0
-A[3] => P[3].IN0
-A[3] => G[3].IN0
-A[4] => P[4].IN0
-A[4] => G[4].IN0
-A[5] => P[5].IN0
-A[5] => G[5].IN0
-A[6] => P[6].IN0
-A[6] => G[6].IN0
-A[7] => P[7].IN0
-A[7] => G[7].IN0
-B[0] => P[0].IN1
-B[0] => G[0].IN1
-B[1] => P[1].IN1
-B[1] => G[1].IN1
-B[2] => P[2].IN1
-B[2] => G[2].IN1
-B[3] => P[3].IN1
-B[3] => G[3].IN1
-B[4] => P[4].IN1
-B[4] => G[4].IN1
-B[5] => P[5].IN1
-B[5] => G[5].IN1
-B[6] => P[6].IN1
-B[6] => G[6].IN1
-B[7] => P[7].IN1
-B[7] => G[7].IN1
-Sum[0] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[1] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[2] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[3] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[4] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[5] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[6] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[7] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => Sum.IN1
-Generate <= Generate.DB_MAX_OUTPUT_PORT_TYPE
-Propogate <= Propogate.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block2
-A[0] => P[0].IN0
-A[0] => G[0].IN0
-A[1] => P[1].IN0
-A[1] => G[1].IN0
-A[2] => P[2].IN0
-A[2] => G[2].IN0
-A[3] => P[3].IN0
-A[3] => G[3].IN0
-A[4] => P[4].IN0
-A[4] => G[4].IN0
-A[5] => P[5].IN0
-A[5] => G[5].IN0
-A[6] => P[6].IN0
-A[6] => G[6].IN0
-A[7] => P[7].IN0
-A[7] => G[7].IN0
-B[0] => P[0].IN1
-B[0] => G[0].IN1
-B[1] => P[1].IN1
-B[1] => G[1].IN1
-B[2] => P[2].IN1
-B[2] => G[2].IN1
-B[3] => P[3].IN1
-B[3] => G[3].IN1
-B[4] => P[4].IN1
-B[4] => G[4].IN1
-B[5] => P[5].IN1
-B[5] => G[5].IN1
-B[6] => P[6].IN1
-B[6] => G[6].IN1
-B[7] => P[7].IN1
-B[7] => G[7].IN1
-Sum[0] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[1] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[2] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[3] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[4] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[5] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[6] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[7] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => Sum.IN1
-Generate <= Generate.DB_MAX_OUTPUT_PORT_TYPE
-Propogate <= Propogate.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block3
-A[0] => P[0].IN0
-A[0] => G[0].IN0
-A[1] => P[1].IN0
-A[1] => G[1].IN0
-A[2] => P[2].IN0
-A[2] => G[2].IN0
-A[3] => P[3].IN0
-A[3] => G[3].IN0
-A[4] => P[4].IN0
-A[4] => G[4].IN0
-A[5] => P[5].IN0
-A[5] => G[5].IN0
-A[6] => P[6].IN0
-A[6] => G[6].IN0
-A[7] => P[7].IN0
-A[7] => G[7].IN0
-B[0] => P[0].IN1
-B[0] => G[0].IN1
-B[1] => P[1].IN1
-B[1] => G[1].IN1
-B[2] => P[2].IN1
-B[2] => G[2].IN1
-B[3] => P[3].IN1
-B[3] => G[3].IN1
-B[4] => P[4].IN1
-B[4] => G[4].IN1
-B[5] => P[5].IN1
-B[5] => G[5].IN1
-B[6] => P[6].IN1
-B[6] => G[6].IN1
-B[7] => P[7].IN1
-B[7] => G[7].IN1
-Sum[0] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[1] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[2] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[3] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[4] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[5] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[6] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Sum[7] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => C.IN1
-Carryin => Sum.IN1
-Generate <= Generate.DB_MAX_OUTPUT_PORT_TYPE
-Propogate <= Propogate.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0
-sel => sel.IN32
-x0[0] => x0[0].IN1
-x0[1] => x0[1].IN1
-x0[2] => x0[2].IN1
-x0[3] => x0[3].IN1
-x0[4] => x0[4].IN1
-x0[5] => x0[5].IN1
-x0[6] => x0[6].IN1
-x0[7] => x0[7].IN1
-x0[8] => x0[8].IN1
-x0[9] => x0[9].IN1
-x0[10] => x0[10].IN1
-x0[11] => x0[11].IN1
-x0[12] => x0[12].IN1
-x0[13] => x0[13].IN1
-x0[14] => x0[14].IN1
-x0[15] => x0[15].IN1
-x0[16] => x0[16].IN1
-x0[17] => x0[17].IN1
-x0[18] => x0[18].IN1
-x0[19] => x0[19].IN1
-x0[20] => x0[20].IN1
-x0[21] => x0[21].IN1
-x0[22] => x0[22].IN1
-x0[23] => x0[23].IN1
-x0[24] => x0[24].IN1
-x0[25] => x0[25].IN1
-x0[26] => x0[26].IN1
-x0[27] => x0[27].IN1
-x0[28] => x0[28].IN1
-x0[29] => x0[29].IN1
-x0[30] => x0[30].IN1
-x0[31] => x0[31].IN1
-x1[0] => x1[0].IN1
-x1[1] => x1[1].IN1
-x1[2] => x1[2].IN1
-x1[3] => x1[3].IN1
-x1[4] => x1[4].IN1
-x1[5] => x1[5].IN1
-x1[6] => x1[6].IN1
-x1[7] => x1[7].IN1
-x1[8] => x1[8].IN1
-x1[9] => x1[9].IN1
-x1[10] => x1[10].IN1
-x1[11] => x1[11].IN1
-x1[12] => x1[12].IN1
-x1[13] => x1[13].IN1
-x1[14] => x1[14].IN1
-x1[15] => x1[15].IN1
-x1[16] => x1[16].IN1
-x1[17] => x1[17].IN1
-x1[18] => x1[18].IN1
-x1[19] => x1[19].IN1
-x1[20] => x1[20].IN1
-x1[21] => x1[21].IN1
-x1[22] => x1[22].IN1
-x1[23] => x1[23].IN1
-x1[24] => x1[24].IN1
-x1[25] => x1[25].IN1
-x1[26] => x1[26].IN1
-x1[27] => x1[27].IN1
-x1[28] => x1[28].IN1
-x1[29] => x1[29].IN1
-x1[30] => x1[30].IN1
-x1[31] => x1[31].IN1
-f[0] <= dxp_mux2to1_v:mux_Stage[0].stage0.port3
-f[1] <= dxp_mux2to1_v:mux_Stage[1].stage0.port3
-f[2] <= dxp_mux2to1_v:mux_Stage[2].stage0.port3
-f[3] <= dxp_mux2to1_v:mux_Stage[3].stage0.port3
-f[4] <= dxp_mux2to1_v:mux_Stage[4].stage0.port3
-f[5] <= dxp_mux2to1_v:mux_Stage[5].stage0.port3
-f[6] <= dxp_mux2to1_v:mux_Stage[6].stage0.port3
-f[7] <= dxp_mux2to1_v:mux_Stage[7].stage0.port3
-f[8] <= dxp_mux2to1_v:mux_Stage[8].stage0.port3
-f[9] <= dxp_mux2to1_v:mux_Stage[9].stage0.port3
-f[10] <= dxp_mux2to1_v:mux_Stage[10].stage0.port3
-f[11] <= dxp_mux2to1_v:mux_Stage[11].stage0.port3
-f[12] <= dxp_mux2to1_v:mux_Stage[12].stage0.port3
-f[13] <= dxp_mux2to1_v:mux_Stage[13].stage0.port3
-f[14] <= dxp_mux2to1_v:mux_Stage[14].stage0.port3
-f[15] <= dxp_mux2to1_v:mux_Stage[15].stage0.port3
-f[16] <= dxp_mux2to1_v:mux_Stage[16].stage0.port3
-f[17] <= dxp_mux2to1_v:mux_Stage[17].stage0.port3
-f[18] <= dxp_mux2to1_v:mux_Stage[18].stage0.port3
-f[19] <= dxp_mux2to1_v:mux_Stage[19].stage0.port3
-f[20] <= dxp_mux2to1_v:mux_Stage[20].stage0.port3
-f[21] <= dxp_mux2to1_v:mux_Stage[21].stage0.port3
-f[22] <= dxp_mux2to1_v:mux_Stage[22].stage0.port3
-f[23] <= dxp_mux2to1_v:mux_Stage[23].stage0.port3
-f[24] <= dxp_mux2to1_v:mux_Stage[24].stage0.port3
-f[25] <= dxp_mux2to1_v:mux_Stage[25].stage0.port3
-f[26] <= dxp_mux2to1_v:mux_Stage[26].stage0.port3
-f[27] <= dxp_mux2to1_v:mux_Stage[27].stage0.port3
-f[28] <= dxp_mux2to1_v:mux_Stage[28].stage0.port3
-f[29] <= dxp_mux2to1_v:mux_Stage[29].stage0.port3
-f[30] <= dxp_mux2to1_v:mux_Stage[30].stage0.port3
-f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[0].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[1].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[2].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[3].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[4].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[5].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[6].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[7].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[8].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[9].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[10].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[11].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[12].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[13].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[14].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[15].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[16].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[17].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[18].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[19].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[20].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[21].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[22].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[23].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[24].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[25].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[26].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[27].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[28].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[29].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[30].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[31].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1
-sel => sel.IN32
-x0[0] => x0[0].IN1
-x0[1] => x0[1].IN1
-x0[2] => x0[2].IN1
-x0[3] => x0[3].IN1
-x0[4] => x0[4].IN1
-x0[5] => x0[5].IN1
-x0[6] => x0[6].IN1
-x0[7] => x0[7].IN1
-x0[8] => x0[8].IN1
-x0[9] => x0[9].IN1
-x0[10] => x0[10].IN1
-x0[11] => x0[11].IN1
-x0[12] => x0[12].IN1
-x0[13] => x0[13].IN1
-x0[14] => x0[14].IN1
-x0[15] => x0[15].IN1
-x0[16] => x0[16].IN1
-x0[17] => x0[17].IN1
-x0[18] => x0[18].IN1
-x0[19] => x0[19].IN1
-x0[20] => x0[20].IN1
-x0[21] => x0[21].IN1
-x0[22] => x0[22].IN1
-x0[23] => x0[23].IN1
-x0[24] => x0[24].IN1
-x0[25] => x0[25].IN1
-x0[26] => x0[26].IN1
-x0[27] => x0[27].IN1
-x0[28] => x0[28].IN1
-x0[29] => x0[29].IN1
-x0[30] => x0[30].IN1
-x0[31] => x0[31].IN1
-x1[0] => x1[0].IN1
-x1[1] => x1[1].IN1
-x1[2] => x1[2].IN1
-x1[3] => x1[3].IN1
-x1[4] => x1[4].IN1
-x1[5] => x1[5].IN1
-x1[6] => x1[6].IN1
-x1[7] => x1[7].IN1
-x1[8] => x1[8].IN1
-x1[9] => x1[9].IN1
-x1[10] => x1[10].IN1
-x1[11] => x1[11].IN1
-x1[12] => x1[12].IN1
-x1[13] => x1[13].IN1
-x1[14] => x1[14].IN1
-x1[15] => x1[15].IN1
-x1[16] => x1[16].IN1
-x1[17] => x1[17].IN1
-x1[18] => x1[18].IN1
-x1[19] => x1[19].IN1
-x1[20] => x1[20].IN1
-x1[21] => x1[21].IN1
-x1[22] => x1[22].IN1
-x1[23] => x1[23].IN1
-x1[24] => x1[24].IN1
-x1[25] => x1[25].IN1
-x1[26] => x1[26].IN1
-x1[27] => x1[27].IN1
-x1[28] => x1[28].IN1
-x1[29] => x1[29].IN1
-x1[30] => x1[30].IN1
-x1[31] => x1[31].IN1
-f[0] <= dxp_mux2to1_v:mux_Stage[0].stage0.port3
-f[1] <= dxp_mux2to1_v:mux_Stage[1].stage0.port3
-f[2] <= dxp_mux2to1_v:mux_Stage[2].stage0.port3
-f[3] <= dxp_mux2to1_v:mux_Stage[3].stage0.port3
-f[4] <= dxp_mux2to1_v:mux_Stage[4].stage0.port3
-f[5] <= dxp_mux2to1_v:mux_Stage[5].stage0.port3
-f[6] <= dxp_mux2to1_v:mux_Stage[6].stage0.port3
-f[7] <= dxp_mux2to1_v:mux_Stage[7].stage0.port3
-f[8] <= dxp_mux2to1_v:mux_Stage[8].stage0.port3
-f[9] <= dxp_mux2to1_v:mux_Stage[9].stage0.port3
-f[10] <= dxp_mux2to1_v:mux_Stage[10].stage0.port3
-f[11] <= dxp_mux2to1_v:mux_Stage[11].stage0.port3
-f[12] <= dxp_mux2to1_v:mux_Stage[12].stage0.port3
-f[13] <= dxp_mux2to1_v:mux_Stage[13].stage0.port3
-f[14] <= dxp_mux2to1_v:mux_Stage[14].stage0.port3
-f[15] <= dxp_mux2to1_v:mux_Stage[15].stage0.port3
-f[16] <= dxp_mux2to1_v:mux_Stage[16].stage0.port3
-f[17] <= dxp_mux2to1_v:mux_Stage[17].stage0.port3
-f[18] <= dxp_mux2to1_v:mux_Stage[18].stage0.port3
-f[19] <= dxp_mux2to1_v:mux_Stage[19].stage0.port3
-f[20] <= dxp_mux2to1_v:mux_Stage[20].stage0.port3
-f[21] <= dxp_mux2to1_v:mux_Stage[21].stage0.port3
-f[22] <= dxp_mux2to1_v:mux_Stage[22].stage0.port3
-f[23] <= dxp_mux2to1_v:mux_Stage[23].stage0.port3
-f[24] <= dxp_mux2to1_v:mux_Stage[24].stage0.port3
-f[25] <= dxp_mux2to1_v:mux_Stage[25].stage0.port3
-f[26] <= dxp_mux2to1_v:mux_Stage[26].stage0.port3
-f[27] <= dxp_mux2to1_v:mux_Stage[27].stage0.port3
-f[28] <= dxp_mux2to1_v:mux_Stage[28].stage0.port3
-f[29] <= dxp_mux2to1_v:mux_Stage[29].stage0.port3
-f[30] <= dxp_mux2to1_v:mux_Stage[30].stage0.port3
-f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[0].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[1].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[2].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[3].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[4].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[5].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[6].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[7].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[8].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[9].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[10].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[11].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[12].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[13].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[14].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[15].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[16].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[17].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[18].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[19].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[20].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[21].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[22].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[23].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[24].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[25].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[26].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[27].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[28].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[29].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[30].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux1|dxp_mux2to1_v:mux_Stage[31].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2
-sel => sel.IN32
-x0[0] => x0[0].IN1
-x0[1] => x0[1].IN1
-x0[2] => x0[2].IN1
-x0[3] => x0[3].IN1
-x0[4] => x0[4].IN1
-x0[5] => x0[5].IN1
-x0[6] => x0[6].IN1
-x0[7] => x0[7].IN1
-x0[8] => x0[8].IN1
-x0[9] => x0[9].IN1
-x0[10] => x0[10].IN1
-x0[11] => x0[11].IN1
-x0[12] => x0[12].IN1
-x0[13] => x0[13].IN1
-x0[14] => x0[14].IN1
-x0[15] => x0[15].IN1
-x0[16] => x0[16].IN1
-x0[17] => x0[17].IN1
-x0[18] => x0[18].IN1
-x0[19] => x0[19].IN1
-x0[20] => x0[20].IN1
-x0[21] => x0[21].IN1
-x0[22] => x0[22].IN1
-x0[23] => x0[23].IN1
-x0[24] => x0[24].IN1
-x0[25] => x0[25].IN1
-x0[26] => x0[26].IN1
-x0[27] => x0[27].IN1
-x0[28] => x0[28].IN1
-x0[29] => x0[29].IN1
-x0[30] => x0[30].IN1
-x0[31] => x0[31].IN1
-x1[0] => x1[0].IN1
-x1[1] => x1[1].IN1
-x1[2] => x1[2].IN1
-x1[3] => x1[3].IN1
-x1[4] => x1[4].IN1
-x1[5] => x1[5].IN1
-x1[6] => x1[6].IN1
-x1[7] => x1[7].IN1
-x1[8] => x1[8].IN1
-x1[9] => x1[9].IN1
-x1[10] => x1[10].IN1
-x1[11] => x1[11].IN1
-x1[12] => x1[12].IN1
-x1[13] => x1[13].IN1
-x1[14] => x1[14].IN1
-x1[15] => x1[15].IN1
-x1[16] => x1[16].IN1
-x1[17] => x1[17].IN1
-x1[18] => x1[18].IN1
-x1[19] => x1[19].IN1
-x1[20] => x1[20].IN1
-x1[21] => x1[21].IN1
-x1[22] => x1[22].IN1
-x1[23] => x1[23].IN1
-x1[24] => x1[24].IN1
-x1[25] => x1[25].IN1
-x1[26] => x1[26].IN1
-x1[27] => x1[27].IN1
-x1[28] => x1[28].IN1
-x1[29] => x1[29].IN1
-x1[30] => x1[30].IN1
-x1[31] => x1[31].IN1
-f[0] <= dxp_mux2to1_v:mux_Stage[0].stage0.port3
-f[1] <= dxp_mux2to1_v:mux_Stage[1].stage0.port3
-f[2] <= dxp_mux2to1_v:mux_Stage[2].stage0.port3
-f[3] <= dxp_mux2to1_v:mux_Stage[3].stage0.port3
-f[4] <= dxp_mux2to1_v:mux_Stage[4].stage0.port3
-f[5] <= dxp_mux2to1_v:mux_Stage[5].stage0.port3
-f[6] <= dxp_mux2to1_v:mux_Stage[6].stage0.port3
-f[7] <= dxp_mux2to1_v:mux_Stage[7].stage0.port3
-f[8] <= dxp_mux2to1_v:mux_Stage[8].stage0.port3
-f[9] <= dxp_mux2to1_v:mux_Stage[9].stage0.port3
-f[10] <= dxp_mux2to1_v:mux_Stage[10].stage0.port3
-f[11] <= dxp_mux2to1_v:mux_Stage[11].stage0.port3
-f[12] <= dxp_mux2to1_v:mux_Stage[12].stage0.port3
-f[13] <= dxp_mux2to1_v:mux_Stage[13].stage0.port3
-f[14] <= dxp_mux2to1_v:mux_Stage[14].stage0.port3
-f[15] <= dxp_mux2to1_v:mux_Stage[15].stage0.port3
-f[16] <= dxp_mux2to1_v:mux_Stage[16].stage0.port3
-f[17] <= dxp_mux2to1_v:mux_Stage[17].stage0.port3
-f[18] <= dxp_mux2to1_v:mux_Stage[18].stage0.port3
-f[19] <= dxp_mux2to1_v:mux_Stage[19].stage0.port3
-f[20] <= dxp_mux2to1_v:mux_Stage[20].stage0.port3
-f[21] <= dxp_mux2to1_v:mux_Stage[21].stage0.port3
-f[22] <= dxp_mux2to1_v:mux_Stage[22].stage0.port3
-f[23] <= dxp_mux2to1_v:mux_Stage[23].stage0.port3
-f[24] <= dxp_mux2to1_v:mux_Stage[24].stage0.port3
-f[25] <= dxp_mux2to1_v:mux_Stage[25].stage0.port3
-f[26] <= dxp_mux2to1_v:mux_Stage[26].stage0.port3
-f[27] <= dxp_mux2to1_v:mux_Stage[27].stage0.port3
-f[28] <= dxp_mux2to1_v:mux_Stage[28].stage0.port3
-f[29] <= dxp_mux2to1_v:mux_Stage[29].stage0.port3
-f[30] <= dxp_mux2to1_v:mux_Stage[30].stage0.port3
-f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[0].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[1].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[2].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[3].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[4].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[5].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[6].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[7].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[8].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[9].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[10].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[11].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[12].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[13].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[14].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[15].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[16].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[17].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[18].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[19].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[20].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[21].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[22].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[23].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[24].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[25].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[26].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[27].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[28].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[29].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[30].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux2|dxp_mux2to1_v:mux_Stage[31].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3
-sel => sel.IN32
-x0[0] => x0[0].IN1
-x0[1] => x0[1].IN1
-x0[2] => x0[2].IN1
-x0[3] => x0[3].IN1
-x0[4] => x0[4].IN1
-x0[5] => x0[5].IN1
-x0[6] => x0[6].IN1
-x0[7] => x0[7].IN1
-x0[8] => x0[8].IN1
-x0[9] => x0[9].IN1
-x0[10] => x0[10].IN1
-x0[11] => x0[11].IN1
-x0[12] => x0[12].IN1
-x0[13] => x0[13].IN1
-x0[14] => x0[14].IN1
-x0[15] => x0[15].IN1
-x0[16] => x0[16].IN1
-x0[17] => x0[17].IN1
-x0[18] => x0[18].IN1
-x0[19] => x0[19].IN1
-x0[20] => x0[20].IN1
-x0[21] => x0[21].IN1
-x0[22] => x0[22].IN1
-x0[23] => x0[23].IN1
-x0[24] => x0[24].IN1
-x0[25] => x0[25].IN1
-x0[26] => x0[26].IN1
-x0[27] => x0[27].IN1
-x0[28] => x0[28].IN1
-x0[29] => x0[29].IN1
-x0[30] => x0[30].IN1
-x0[31] => x0[31].IN1
-x1[0] => x1[0].IN1
-x1[1] => x1[1].IN1
-x1[2] => x1[2].IN1
-x1[3] => x1[3].IN1
-x1[4] => x1[4].IN1
-x1[5] => x1[5].IN1
-x1[6] => x1[6].IN1
-x1[7] => x1[7].IN1
-x1[8] => x1[8].IN1
-x1[9] => x1[9].IN1
-x1[10] => x1[10].IN1
-x1[11] => x1[11].IN1
-x1[12] => x1[12].IN1
-x1[13] => x1[13].IN1
-x1[14] => x1[14].IN1
-x1[15] => x1[15].IN1
-x1[16] => x1[16].IN1
-x1[17] => x1[17].IN1
-x1[18] => x1[18].IN1
-x1[19] => x1[19].IN1
-x1[20] => x1[20].IN1
-x1[21] => x1[21].IN1
-x1[22] => x1[22].IN1
-x1[23] => x1[23].IN1
-x1[24] => x1[24].IN1
-x1[25] => x1[25].IN1
-x1[26] => x1[26].IN1
-x1[27] => x1[27].IN1
-x1[28] => x1[28].IN1
-x1[29] => x1[29].IN1
-x1[30] => x1[30].IN1
-x1[31] => x1[31].IN1
-f[0] <= dxp_mux2to1_v:mux_Stage[0].stage0.port3
-f[1] <= dxp_mux2to1_v:mux_Stage[1].stage0.port3
-f[2] <= dxp_mux2to1_v:mux_Stage[2].stage0.port3
-f[3] <= dxp_mux2to1_v:mux_Stage[3].stage0.port3
-f[4] <= dxp_mux2to1_v:mux_Stage[4].stage0.port3
-f[5] <= dxp_mux2to1_v:mux_Stage[5].stage0.port3
-f[6] <= dxp_mux2to1_v:mux_Stage[6].stage0.port3
-f[7] <= dxp_mux2to1_v:mux_Stage[7].stage0.port3
-f[8] <= dxp_mux2to1_v:mux_Stage[8].stage0.port3
-f[9] <= dxp_mux2to1_v:mux_Stage[9].stage0.port3
-f[10] <= dxp_mux2to1_v:mux_Stage[10].stage0.port3
-f[11] <= dxp_mux2to1_v:mux_Stage[11].stage0.port3
-f[12] <= dxp_mux2to1_v:mux_Stage[12].stage0.port3
-f[13] <= dxp_mux2to1_v:mux_Stage[13].stage0.port3
-f[14] <= dxp_mux2to1_v:mux_Stage[14].stage0.port3
-f[15] <= dxp_mux2to1_v:mux_Stage[15].stage0.port3
-f[16] <= dxp_mux2to1_v:mux_Stage[16].stage0.port3
-f[17] <= dxp_mux2to1_v:mux_Stage[17].stage0.port3
-f[18] <= dxp_mux2to1_v:mux_Stage[18].stage0.port3
-f[19] <= dxp_mux2to1_v:mux_Stage[19].stage0.port3
-f[20] <= dxp_mux2to1_v:mux_Stage[20].stage0.port3
-f[21] <= dxp_mux2to1_v:mux_Stage[21].stage0.port3
-f[22] <= dxp_mux2to1_v:mux_Stage[22].stage0.port3
-f[23] <= dxp_mux2to1_v:mux_Stage[23].stage0.port3
-f[24] <= dxp_mux2to1_v:mux_Stage[24].stage0.port3
-f[25] <= dxp_mux2to1_v:mux_Stage[25].stage0.port3
-f[26] <= dxp_mux2to1_v:mux_Stage[26].stage0.port3
-f[27] <= dxp_mux2to1_v:mux_Stage[27].stage0.port3
-f[28] <= dxp_mux2to1_v:mux_Stage[28].stage0.port3
-f[29] <= dxp_mux2to1_v:mux_Stage[29].stage0.port3
-f[30] <= dxp_mux2to1_v:mux_Stage[30].stage0.port3
-f[31] <= dxp_mux2to1_v:mux_Stage[31].stage0.port3
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[0].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[1].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[2].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[3].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[4].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[5].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[6].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[7].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[8].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[9].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[10].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[11].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[12].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[13].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[14].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[15].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[16].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[17].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[18].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[19].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[20].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[21].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[22].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[23].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[24].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[25].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[26].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[27].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[28].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[29].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[30].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[31].stage0
-s => f.OUTPUTSELECT
-x1 => f.DATAA
-x2 => f.DATAB
-f <= f.DB_MAX_OUTPUT_PORT_TYPE
+|srg_Program_Memory
+WriteReadn => ProgramMemory[0][0].ENA
+WriteReadn => ProgramMemory[0][1].ENA
+WriteReadn => ProgramMemory[0][2].ENA
+WriteReadn => ProgramMemory[0][3].ENA
+WriteReadn => ProgramMemory[0][4].ENA
+WriteReadn => ProgramMemory[0][5].ENA
+WriteReadn => ProgramMemory[0][6].ENA
+WriteReadn => ProgramMemory[0][7].ENA
+WriteReadn => ProgramMemory[1][0].ENA
+WriteReadn => ProgramMemory[1][1].ENA
+WriteReadn => ProgramMemory[1][2].ENA
+WriteReadn => ProgramMemory[1][3].ENA
+WriteReadn => ProgramMemory[1][4].ENA
+WriteReadn => ProgramMemory[1][5].ENA
+WriteReadn => ProgramMemory[1][6].ENA
+WriteReadn => ProgramMemory[1][7].ENA
+WriteReadn => ProgramMemory[2][0].ENA
+WriteReadn => ProgramMemory[2][1].ENA
+WriteReadn => ProgramMemory[2][2].ENA
+WriteReadn => ProgramMemory[2][3].ENA
+WriteReadn => ProgramMemory[2][4].ENA
+WriteReadn => ProgramMemory[2][5].ENA
+WriteReadn => ProgramMemory[2][6].ENA
+WriteReadn => ProgramMemory[2][7].ENA
+WriteReadn => ProgramMemory[3][0].ENA
+WriteReadn => ProgramMemory[3][1].ENA
+WriteReadn => ProgramMemory[3][2].ENA
+WriteReadn => ProgramMemory[3][3].ENA
+WriteReadn => ProgramMemory[3][4].ENA
+WriteReadn => ProgramMemory[3][5].ENA
+WriteReadn => ProgramMemory[3][6].ENA
+WriteReadn => ProgramMemory[3][7].ENA
+WriteReadn => ProgramMemory[4][0].ENA
+WriteReadn => ProgramMemory[4][1].ENA
+WriteReadn => ProgramMemory[4][2].ENA
+WriteReadn => ProgramMemory[4][3].ENA
+WriteReadn => ProgramMemory[4][4].ENA
+WriteReadn => ProgramMemory[4][5].ENA
+WriteReadn => ProgramMemory[4][6].ENA
+WriteReadn => ProgramMemory[4][7].ENA
+WriteReadn => ProgramMemory[5][0].ENA
+WriteReadn => ProgramMemory[5][1].ENA
+WriteReadn => ProgramMemory[5][2].ENA
+WriteReadn => ProgramMemory[5][3].ENA
+WriteReadn => ProgramMemory[5][4].ENA
+WriteReadn => ProgramMemory[5][5].ENA
+WriteReadn => ProgramMemory[5][6].ENA
+WriteReadn => ProgramMemory[5][7].ENA
+WriteReadn => ProgramMemory[6][0].ENA
+WriteReadn => ProgramMemory[6][1].ENA
+WriteReadn => ProgramMemory[6][2].ENA
+WriteReadn => ProgramMemory[6][3].ENA
+WriteReadn => ProgramMemory[6][4].ENA
+WriteReadn => ProgramMemory[6][5].ENA
+WriteReadn => ProgramMemory[6][6].ENA
+WriteReadn => ProgramMemory[6][7].ENA
+WriteReadn => ProgramMemory[7][0].ENA
+WriteReadn => ProgramMemory[7][1].ENA
+WriteReadn => ProgramMemory[7][2].ENA
+WriteReadn => ProgramMemory[7][3].ENA
+WriteReadn => ProgramMemory[7][4].ENA
+WriteReadn => ProgramMemory[7][5].ENA
+WriteReadn => ProgramMemory[7][6].ENA
+WriteReadn => ProgramMemory[7][7].ENA
+WriteReadn => ReadData[0]~reg0.ENA
+WriteReadn => ReadData[1]~reg0.ENA
+WriteReadn => ReadData[2]~reg0.ENA
+WriteReadn => ReadData[3]~reg0.ENA
+WriteReadn => ReadData[4]~reg0.ENA
+WriteReadn => ReadData[5]~reg0.ENA
+WriteReadn => ReadData[6]~reg0.ENA
+WriteReadn => ReadData[7]~reg0.ENA
+WriteReadn => ReadData[8]~reg0.ENA
+WriteReadn => ReadData[9]~reg0.ENA
+WriteReadn => ReadData[10]~reg0.ENA
+WriteReadn => ReadData[11]~reg0.ENA
+WriteReadn => ReadData[12]~reg0.ENA
+WriteReadn => ReadData[13]~reg0.ENA
+WriteReadn => ReadData[14]~reg0.ENA
+WriteReadn => ReadData[15]~reg0.ENA
+WriteReadn => ReadData[16]~reg0.ENA
+WriteReadn => ReadData[17]~reg0.ENA
+WriteReadn => ReadData[18]~reg0.ENA
+WriteReadn => ReadData[19]~reg0.ENA
+WriteReadn => ReadData[20]~reg0.ENA
+WriteReadn => ReadData[21]~reg0.ENA
+WriteReadn => ReadData[22]~reg0.ENA
+WriteReadn => ReadData[23]~reg0.ENA
+WriteReadn => ReadData[24]~reg0.ENA
+WriteReadn => ReadData[25]~reg0.ENA
+WriteReadn => ReadData[26]~reg0.ENA
+WriteReadn => ReadData[27]~reg0.ENA
+WriteReadn => ReadData[28]~reg0.ENA
+WriteReadn => ReadData[29]~reg0.ENA
+WriteReadn => ReadData[30]~reg0.ENA
+WriteReadn => ReadData[31]~reg0.ENA
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[0] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[1] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[2] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[3] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[4] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[5] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[6] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+WriteData[7] => ProgramMemory.DATAB
+clk => ProgramMemory[0][0].CLK
+clk => ProgramMemory[0][1].CLK
+clk => ProgramMemory[0][2].CLK
+clk => ProgramMemory[0][3].CLK
+clk => ProgramMemory[0][4].CLK
+clk => ProgramMemory[0][5].CLK
+clk => ProgramMemory[0][6].CLK
+clk => ProgramMemory[0][7].CLK
+clk => ProgramMemory[1][0].CLK
+clk => ProgramMemory[1][1].CLK
+clk => ProgramMemory[1][2].CLK
+clk => ProgramMemory[1][3].CLK
+clk => ProgramMemory[1][4].CLK
+clk => ProgramMemory[1][5].CLK
+clk => ProgramMemory[1][6].CLK
+clk => ProgramMemory[1][7].CLK
+clk => ProgramMemory[2][0].CLK
+clk => ProgramMemory[2][1].CLK
+clk => ProgramMemory[2][2].CLK
+clk => ProgramMemory[2][3].CLK
+clk => ProgramMemory[2][4].CLK
+clk => ProgramMemory[2][5].CLK
+clk => ProgramMemory[2][6].CLK
+clk => ProgramMemory[2][7].CLK
+clk => ProgramMemory[3][0].CLK
+clk => ProgramMemory[3][1].CLK
+clk => ProgramMemory[3][2].CLK
+clk => ProgramMemory[3][3].CLK
+clk => ProgramMemory[3][4].CLK
+clk => ProgramMemory[3][5].CLK
+clk => ProgramMemory[3][6].CLK
+clk => ProgramMemory[3][7].CLK
+clk => ProgramMemory[4][0].CLK
+clk => ProgramMemory[4][1].CLK
+clk => ProgramMemory[4][2].CLK
+clk => ProgramMemory[4][3].CLK
+clk => ProgramMemory[4][4].CLK
+clk => ProgramMemory[4][5].CLK
+clk => ProgramMemory[4][6].CLK
+clk => ProgramMemory[4][7].CLK
+clk => ProgramMemory[5][0].CLK
+clk => ProgramMemory[5][1].CLK
+clk => ProgramMemory[5][2].CLK
+clk => ProgramMemory[5][3].CLK
+clk => ProgramMemory[5][4].CLK
+clk => ProgramMemory[5][5].CLK
+clk => ProgramMemory[5][6].CLK
+clk => ProgramMemory[5][7].CLK
+clk => ProgramMemory[6][0].CLK
+clk => ProgramMemory[6][1].CLK
+clk => ProgramMemory[6][2].CLK
+clk => ProgramMemory[6][3].CLK
+clk => ProgramMemory[6][4].CLK
+clk => ProgramMemory[6][5].CLK
+clk => ProgramMemory[6][6].CLK
+clk => ProgramMemory[6][7].CLK
+clk => ProgramMemory[7][0].CLK
+clk => ProgramMemory[7][1].CLK
+clk => ProgramMemory[7][2].CLK
+clk => ProgramMemory[7][3].CLK
+clk => ProgramMemory[7][4].CLK
+clk => ProgramMemory[7][5].CLK
+clk => ProgramMemory[7][6].CLK
+clk => ProgramMemory[7][7].CLK
+clk => ReadData[0]~reg0.CLK
+clk => ReadData[1]~reg0.CLK
+clk => ReadData[2]~reg0.CLK
+clk => ReadData[3]~reg0.CLK
+clk => ReadData[4]~reg0.CLK
+clk => ReadData[5]~reg0.CLK
+clk => ReadData[6]~reg0.CLK
+clk => ReadData[7]~reg0.CLK
+clk => ReadData[8]~reg0.CLK
+clk => ReadData[9]~reg0.CLK
+clk => ReadData[10]~reg0.CLK
+clk => ReadData[11]~reg0.CLK
+clk => ReadData[12]~reg0.CLK
+clk => ReadData[13]~reg0.CLK
+clk => ReadData[14]~reg0.CLK
+clk => ReadData[15]~reg0.CLK
+clk => ReadData[16]~reg0.CLK
+clk => ReadData[17]~reg0.CLK
+clk => ReadData[18]~reg0.CLK
+clk => ReadData[19]~reg0.CLK
+clk => ReadData[20]~reg0.CLK
+clk => ReadData[21]~reg0.CLK
+clk => ReadData[22]~reg0.CLK
+clk => ReadData[23]~reg0.CLK
+clk => ReadData[24]~reg0.CLK
+clk => ReadData[25]~reg0.CLK
+clk => ReadData[26]~reg0.CLK
+clk => ReadData[27]~reg0.CLK
+clk => ReadData[28]~reg0.CLK
+clk => ReadData[29]~reg0.CLK
+clk => ReadData[30]~reg0.CLK
+clk => ReadData[31]~reg0.CLK
+Address[0] => Mux0.IN2
+Address[0] => Mux1.IN2
+Address[0] => Mux2.IN2
+Address[0] => Mux3.IN2
+Address[0] => Mux4.IN2
+Address[0] => Mux5.IN2
+Address[0] => Mux6.IN2
+Address[0] => Mux7.IN2
+Address[0] => Add0.IN64
+Address[0] => Mux16.IN2
+Address[0] => Mux17.IN2
+Address[0] => Mux18.IN2
+Address[0] => Mux19.IN2
+Address[0] => Mux20.IN2
+Address[0] => Mux21.IN2
+Address[0] => Mux22.IN2
+Address[0] => Mux23.IN2
+Address[0] => Add2.IN64
+Address[0] => Decoder0.IN2
+Address[1] => Mux0.IN1
+Address[1] => Mux1.IN1
+Address[1] => Mux2.IN1
+Address[1] => Mux3.IN1
+Address[1] => Mux4.IN1
+Address[1] => Mux5.IN1
+Address[1] => Mux6.IN1
+Address[1] => Mux7.IN1
+Address[1] => Add0.IN63
+Address[1] => Add1.IN62
+Address[1] => Add2.IN63
+Address[1] => Decoder0.IN1
+Address[2] => Mux0.IN0
+Address[2] => Mux1.IN0
+Address[2] => Mux2.IN0
+Address[2] => Mux3.IN0
+Address[2] => Mux4.IN0
+Address[2] => Mux5.IN0
+Address[2] => Mux6.IN0
+Address[2] => Mux7.IN0
+Address[2] => Add0.IN62
+Address[2] => Add1.IN61
+Address[2] => Add2.IN62
+Address[2] => Decoder0.IN0
+Address[3] => Add0.IN61
+Address[3] => Add1.IN60
+Address[3] => Add2.IN61
+Address[3] => LessThan0.IN58
+Address[4] => Add0.IN60
+Address[4] => Add1.IN59
+Address[4] => Add2.IN60
+Address[4] => LessThan0.IN57
+Address[5] => Add0.IN59
+Address[5] => Add1.IN58
+Address[5] => Add2.IN59
+Address[5] => LessThan0.IN56
+Address[6] => Add0.IN58
+Address[6] => Add1.IN57
+Address[6] => Add2.IN58
+Address[6] => LessThan0.IN55
+Address[7] => Add0.IN57
+Address[7] => Add1.IN56
+Address[7] => Add2.IN57
+Address[7] => LessThan0.IN54
+Address[8] => Add0.IN56
+Address[8] => Add1.IN55
+Address[8] => Add2.IN56
+Address[8] => LessThan0.IN53
+Address[9] => Add0.IN55
+Address[9] => Add1.IN54
+Address[9] => Add2.IN55
+Address[9] => LessThan0.IN52
+Address[10] => Add0.IN54
+Address[10] => Add1.IN53
+Address[10] => Add2.IN54
+Address[10] => LessThan0.IN51
+Address[11] => Add0.IN53
+Address[11] => Add1.IN52
+Address[11] => Add2.IN53
+Address[11] => LessThan0.IN50
+Address[12] => Add0.IN52
+Address[12] => Add1.IN51
+Address[12] => Add2.IN52
+Address[12] => LessThan0.IN49
+Address[13] => Add0.IN51
+Address[13] => Add1.IN50
+Address[13] => Add2.IN51
+Address[13] => LessThan0.IN48
+Address[14] => Add0.IN50
+Address[14] => Add1.IN49
+Address[14] => Add2.IN50
+Address[14] => LessThan0.IN47
+Address[15] => Add0.IN49
+Address[15] => Add1.IN48
+Address[15] => Add2.IN49
+Address[15] => LessThan0.IN46
+Address[16] => Add0.IN48
+Address[16] => Add1.IN47
+Address[16] => Add2.IN48
+Address[16] => LessThan0.IN45
+Address[17] => Add0.IN47
+Address[17] => Add1.IN46
+Address[17] => Add2.IN47
+Address[17] => LessThan0.IN44
+Address[18] => Add0.IN46
+Address[18] => Add1.IN45
+Address[18] => Add2.IN46
+Address[18] => LessThan0.IN43
+Address[19] => Add0.IN45
+Address[19] => Add1.IN44
+Address[19] => Add2.IN45
+Address[19] => LessThan0.IN42
+Address[20] => Add0.IN44
+Address[20] => Add1.IN43
+Address[20] => Add2.IN44
+Address[20] => LessThan0.IN41
+Address[21] => Add0.IN43
+Address[21] => Add1.IN42
+Address[21] => Add2.IN43
+Address[21] => LessThan0.IN40
+Address[22] => Add0.IN42
+Address[22] => Add1.IN41
+Address[22] => Add2.IN42
+Address[22] => LessThan0.IN39
+Address[23] => Add0.IN41
+Address[23] => Add1.IN40
+Address[23] => Add2.IN41
+Address[23] => LessThan0.IN38
+Address[24] => Add0.IN40
+Address[24] => Add1.IN39
+Address[24] => Add2.IN40
+Address[24] => LessThan0.IN37
+Address[25] => Add0.IN39
+Address[25] => Add1.IN38
+Address[25] => Add2.IN39
+Address[25] => LessThan0.IN36
+Address[26] => Add0.IN38
+Address[26] => Add1.IN37
+Address[26] => Add2.IN38
+Address[26] => LessThan0.IN35
+Address[27] => Add0.IN37
+Address[27] => Add1.IN36
+Address[27] => Add2.IN37
+Address[27] => LessThan0.IN34
+Address[28] => Add0.IN36
+Address[28] => Add1.IN35
+Address[28] => Add2.IN36
+Address[28] => LessThan0.IN33
+Address[29] => Add0.IN35
+Address[29] => Add1.IN34
+Address[29] => Add2.IN35
+Address[29] => LessThan0.IN32
+Address[30] => Add0.IN34
+Address[30] => Add1.IN33
+Address[30] => Add2.IN34
+Address[30] => LessThan0.IN31
+Address[31] => Add0.IN33
+Address[31] => Add1.IN32
+Address[31] => Add2.IN33
+Address[31] => LessThan0.IN30
+ReadData[0] <= ReadData[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[1] <= ReadData[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[2] <= ReadData[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[3] <= ReadData[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[4] <= ReadData[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[5] <= ReadData[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[6] <= ReadData[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[7] <= ReadData[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[8] <= ReadData[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[9] <= ReadData[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[10] <= ReadData[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[11] <= ReadData[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[12] <= ReadData[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[13] <= ReadData[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[14] <= ReadData[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[15] <= ReadData[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[16] <= ReadData[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[17] <= ReadData[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[18] <= ReadData[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[19] <= ReadData[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[20] <= ReadData[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[21] <= ReadData[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[22] <= ReadData[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[23] <= ReadData[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[24] <= ReadData[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[25] <= ReadData[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[26] <= ReadData[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[27] <= ReadData[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[28] <= ReadData[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[29] <= ReadData[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[30] <= ReadData[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ReadData[31] <= ReadData[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

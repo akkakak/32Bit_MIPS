@@ -4,403 +4,299 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Output[0]",
+					"name" : "ReadData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[1]",
+					"name" : "ReadData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[2]",
+					"name" : "ReadData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[3]",
+					"name" : "ReadData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[4]",
+					"name" : "ReadData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[5]",
+					"name" : "ReadData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[6]",
+					"name" : "ReadData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[7]",
+					"name" : "ReadData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[8]",
+					"name" : "ReadData[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[9]",
+					"name" : "ReadData[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[10]",
+					"name" : "ReadData[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[11]",
+					"name" : "ReadData[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[12]",
+					"name" : "ReadData[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[13]",
+					"name" : "ReadData[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[14]",
+					"name" : "ReadData[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[15]",
+					"name" : "ReadData[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[16]",
+					"name" : "ReadData[16]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[17]",
+					"name" : "ReadData[17]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[18]",
+					"name" : "ReadData[18]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[19]",
+					"name" : "ReadData[19]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[20]",
+					"name" : "ReadData[20]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[21]",
+					"name" : "ReadData[21]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[22]",
+					"name" : "ReadData[22]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[23]",
+					"name" : "ReadData[23]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[24]",
+					"name" : "ReadData[24]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[25]",
+					"name" : "ReadData[25]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[26]",
+					"name" : "ReadData[26]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[27]",
+					"name" : "ReadData[27]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[28]",
+					"name" : "ReadData[28]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[29]",
+					"name" : "ReadData[29]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[30]",
+					"name" : "ReadData[30]",
 					"strict" : false
 				},
 				{
-					"name" : "Output[31]",
+					"name" : "ReadData[31]",
 					"strict" : false
 				},
 				{
-					"name" : "Overflow",
+					"name" : "Address[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "Address[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[31]",
+					"name" : "Address[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OperationSelect[2]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "B[31]",
+					"name" : "WriteReadn",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "WriteData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OperationSelect[0]",
+					"name" : "Address[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OperationSelect[1]",
+					"name" : "Address[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "Address[5]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "Address[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "Address[7]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "Address[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "Address[9]",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "Address[10]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "Address[11]",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "Address[12]",
 					"strict" : false
 				},
 				{
-					"name" : "A[5]",
+					"name" : "Address[13]",
 					"strict" : false
 				},
 				{
-					"name" : "B[5]",
+					"name" : "Address[14]",
 					"strict" : false
 				},
 				{
-					"name" : "A[6]",
+					"name" : "Address[15]",
 					"strict" : false
 				},
 				{
-					"name" : "B[6]",
+					"name" : "Address[16]",
 					"strict" : false
 				},
 				{
-					"name" : "A[7]",
+					"name" : "Address[17]",
 					"strict" : false
 				},
 				{
-					"name" : "B[7]",
+					"name" : "Address[18]",
 					"strict" : false
 				},
 				{
-					"name" : "A[8]",
+					"name" : "Address[19]",
 					"strict" : false
 				},
 				{
-					"name" : "B[8]",
+					"name" : "Address[20]",
 					"strict" : false
 				},
 				{
-					"name" : "A[9]",
+					"name" : "Address[21]",
 					"strict" : false
 				},
 				{
-					"name" : "B[9]",
+					"name" : "Address[22]",
 					"strict" : false
 				},
 				{
-					"name" : "A[10]",
+					"name" : "Address[23]",
 					"strict" : false
 				},
 				{
-					"name" : "B[10]",
+					"name" : "Address[24]",
 					"strict" : false
 				},
 				{
-					"name" : "A[11]",
+					"name" : "Address[25]",
 					"strict" : false
 				},
 				{
-					"name" : "B[11]",
+					"name" : "Address[26]",
 					"strict" : false
 				},
 				{
-					"name" : "A[12]",
+					"name" : "Address[27]",
 					"strict" : false
 				},
 				{
-					"name" : "B[12]",
+					"name" : "Address[28]",
 					"strict" : false
 				},
 				{
-					"name" : "A[13]",
+					"name" : "Address[29]",
 					"strict" : false
 				},
 				{
-					"name" : "B[13]",
+					"name" : "Address[30]",
 					"strict" : false
 				},
 				{
-					"name" : "A[14]",
+					"name" : "Address[31]",
 					"strict" : false
 				},
 				{
-					"name" : "B[14]",
+					"name" : "WriteData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[15]",
+					"name" : "WriteData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[15]",
+					"name" : "WriteData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A[16]",
+					"name" : "WriteData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "B[16]",
+					"name" : "WriteData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[17]",
+					"name" : "WriteData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "B[17]",
-					"strict" : false
-				},
-				{
-					"name" : "A[18]",
-					"strict" : false
-				},
-				{
-					"name" : "B[18]",
-					"strict" : false
-				},
-				{
-					"name" : "A[19]",
-					"strict" : false
-				},
-				{
-					"name" : "B[19]",
-					"strict" : false
-				},
-				{
-					"name" : "A[20]",
-					"strict" : false
-				},
-				{
-					"name" : "B[20]",
-					"strict" : false
-				},
-				{
-					"name" : "A[21]",
-					"strict" : false
-				},
-				{
-					"name" : "B[21]",
-					"strict" : false
-				},
-				{
-					"name" : "A[22]",
-					"strict" : false
-				},
-				{
-					"name" : "B[22]",
-					"strict" : false
-				},
-				{
-					"name" : "A[23]",
-					"strict" : false
-				},
-				{
-					"name" : "B[23]",
-					"strict" : false
-				},
-				{
-					"name" : "A[24]",
-					"strict" : false
-				},
-				{
-					"name" : "B[24]",
-					"strict" : false
-				},
-				{
-					"name" : "A[25]",
-					"strict" : false
-				},
-				{
-					"name" : "B[25]",
-					"strict" : false
-				},
-				{
-					"name" : "A[26]",
-					"strict" : false
-				},
-				{
-					"name" : "B[26]",
-					"strict" : false
-				},
-				{
-					"name" : "A[27]",
-					"strict" : false
-				},
-				{
-					"name" : "B[27]",
-					"strict" : false
-				},
-				{
-					"name" : "A[28]",
-					"strict" : false
-				},
-				{
-					"name" : "B[28]",
-					"strict" : false
-				},
-				{
-					"name" : "A[29]",
-					"strict" : false
-				},
-				{
-					"name" : "B[29]",
-					"strict" : false
-				},
-				{
-					"name" : "A[30]",
-					"strict" : false
-				},
-				{
-					"name" : "B[30]",
+					"name" : "WriteData[7]",
 					"strict" : false
 				}
 			]

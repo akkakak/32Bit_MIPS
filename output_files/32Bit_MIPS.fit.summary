@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri May 31 16:16:44 2019
+Fitter Status : Successful - Sat Jun 08 13:44:53 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : 32Bit_MIPS
-Top-level Entity Name : srg_32Bit_ALU
+Top-level Entity Name : srg_Program_Memory
 Family : Cyclone IV E
 Device : EP4CE6F17C6
 Timing Models : Final
-Total logic elements : 129 / 6,272 ( 2 % )
-    Total combinational functions : 129 / 6,272 ( 2 % )
-    Dedicated logic registers : 0 / 6,272 ( 0 % )
-Total registers : 0
-Total pins : 100 / 180 ( 56 % )
+Total logic elements : 184 / 6,272 ( 3 % )
+    Total combinational functions : 150 / 6,272 ( 2 % )
+    Dedicated logic registers : 96 / 6,272 ( 2 % )
+Total registers : 96
+Total pins : 98 / 180 ( 54 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

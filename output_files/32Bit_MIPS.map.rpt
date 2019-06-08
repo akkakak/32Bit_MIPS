@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 32Bit_MIPS
-Fri May 31 16:41:09 2019
+Sat Jun 08 13:46:58 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -15,13 +15,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: srg_32mux2to1:mux0
- 11. Parameter Settings for User Entity Instance: srg_32mux2to1:mux1
- 12. Parameter Settings for User Entity Instance: srg_32mux2to1:mux2
- 13. Parameter Settings for User Entity Instance: srg_32mux2to1:mux3
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -47,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 31 16:41:09 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 08 13:46:58 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; 32Bit_MIPS                                  ;
-; Top-level Entity Name              ; srg_32Bit_ALU                               ;
+; Top-level Entity Name              ; srg_Program_Memory                          ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 129                                         ;
-;     Total combinational functions  ; 129                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 100                                         ;
+; Total logic elements               ; 214                                         ;
+;     Total combinational functions  ; 150                                         ;
+;     Dedicated logic registers      ; 96                                          ;
+; Total registers                    ; 96                                          ;
+; Total pins                         ; 74                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; srg_32Bit_ALU      ; 32Bit_MIPS         ;
+; Top-level entity name                                                      ; srg_Program_Memory ; 32Bit_MIPS         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,102 +154,62 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; dxp_mux2to1_v.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/dxp_mux2to1_v.v ;         ;
-; srg_32Bit_CLA.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v ;         ;
-; srg_32mux2to1.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v ;         ;
-; srg_32Bit_ALU.v                  ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
+; srg_Program_Memory.v             ; yes             ; User Verilog HDL File  ; C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_Program_Memory.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 129                      ;
-;                                             ;                          ;
-; Total combinational functions               ; 129                      ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 95                       ;
-;     -- 3 input functions                    ; 34                       ;
-;     -- <=2 input functions                  ; 0                        ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 129                      ;
-;     -- arithmetic mode                      ; 0                        ;
-;                                             ;                          ;
-; Total registers                             ; 0                        ;
-;     -- Dedicated logic registers            ; 0                        ;
-;     -- I/O registers                        ; 0                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 100                      ;
-;                                             ;                          ;
-; Embedded Multiplier 9-bit elements          ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; OperationSelect[1]~input ;
-; Maximum fan-out                             ; 65                       ;
-; Total fan-out                               ; 615                      ;
-; Average fan-out                             ; 1.87                     ;
-+---------------------------------------------+--------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 214       ;
+;                                             ;           ;
+; Total combinational functions               ; 150       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 81        ;
+;     -- 3 input functions                    ; 67        ;
+;     -- <=2 input functions                  ; 2         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 150       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 96        ;
+;     -- Dedicated logic registers            ; 96        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 74        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 96        ;
+; Total fan-out                               ; 923       ;
+; Average fan-out                             ; 2.34      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
-+--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name   ; Library Name ;
-+--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+---------------+--------------+
-; |srg_32Bit_ALU                             ; 129 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 100  ; 0            ; |srg_32Bit_ALU                                                       ; srg_32Bit_ALU ; work         ;
-;    |srg_32Bit_CLA:Adder|                   ; 33 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32Bit_CLA:Adder                                   ; srg_32Bit_CLA ; work         ;
-;       |srg_8Bit_CLA:Block0|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block0               ; srg_8Bit_CLA  ; work         ;
-;       |srg_8Bit_CLA:Block1|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block1               ; srg_8Bit_CLA  ; work         ;
-;       |srg_8Bit_CLA:Block2|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block2               ; srg_8Bit_CLA  ; work         ;
-;       |srg_8Bit_CLA:Block3|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block3               ; srg_8Bit_CLA  ; work         ;
-;    |srg_32mux2to1:mux3|                    ; 95 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3                                    ; srg_32mux2to1 ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[0].stage0|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[0].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[10].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[10].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[11].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[11].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[12].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[12].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[13].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[13].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[14].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[14].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[15].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[15].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[16].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[16].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[17].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[17].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[18].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[18].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[19].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[19].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[1].stage0|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[1].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[20].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[20].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[21].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[21].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[22].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[22].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[23].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[23].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[24].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[24].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[25].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[25].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[26].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[26].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[27].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[27].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[28].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[28].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[29].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[29].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[2].stage0|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[2].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[30].stage0| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[30].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[31].stage0| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[31].stage0 ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[3].stage0|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[3].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[4].stage0|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[4].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[5].stage0|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[5].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[6].stage0|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[6].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[7].stage0|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[7].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[8].stage0|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[8].stage0  ; dxp_mux2to1_v ; work         ;
-;       |dxp_mux2to1_v:mux_Stage[9].stage0|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[9].stage0  ; dxp_mux2to1_v ; work         ;
-+--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------------+--------------+
+; |srg_Program_Memory        ; 150 (150)           ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |srg_Program_Memory ; srg_Program_Memory ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -262,63 +218,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 96    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 96    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |srg_32Bit_ALU|srg_32mux2to1:mux3|dxp_mux2to1_v:mux_Stage[0].stage0|f ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: srg_32mux2to1:mux0 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; numBits        ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: srg_32mux2to1:mux1 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; numBits        ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: srg_32mux2to1:mux2 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; numBits        ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: srg_32mux2to1:mux3 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; numBits        ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |srg_Program_Memory|ReadData[24]~reg0 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |srg_Program_Memory|ReadData[8]~reg0  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |srg_Program_Memory|ReadData[0]~reg0  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |srg_Program_Memory|ReadData[16]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -326,14 +245,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 100                         ;
-; cycloneiii_lcell_comb ; 129                         ;
-;     normal            ; 129                         ;
-;         3 data inputs ; 34                          ;
-;         4 data inputs ; 95                          ;
+; boundary_port         ; 74                          ;
+; cycloneiii_ff         ; 96                          ;
+;     ENA               ; 96                          ;
+; cycloneiii_lcell_comb ; 150                         ;
+;     normal            ; 150                         ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 67                          ;
+;         4 data inputs ; 81                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.80                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -352,7 +274,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri May 31 16:40:52 2019
+    Info: Processing started: Sat Jun 08 13:46:37 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 32Bit_MIPS -c 32Bit_MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -380,22 +302,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file srg_32m
     Info (12023): Found entity 1: srg_32mux2to1 File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file srg_32bit_alu.v
     Info (12023): Found entity 1: srg_32Bit_ALU File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v Line: 1
-Info (12127): Elaborating entity "srg_32Bit_ALU" for the top level hierarchy
-Info (12128): Elaborating entity "srg_32Bit_CLA" for hierarchy "srg_32Bit_CLA:Adder" File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v Line: 10
-Info (12128): Elaborating entity "srg_8Bit_CLA" for hierarchy "srg_32Bit_CLA:Adder|srg_8Bit_CLA:Block0" File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_CLA.v Line: 13
-Info (12128): Elaborating entity "srg_32mux2to1" for hierarchy "srg_32mux2to1:mux0" File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32Bit_ALU.v Line: 11
-Info (12128): Elaborating entity "dxp_mux2to1_v" for hierarchy "srg_32mux2to1:mux0|dxp_mux2to1_v:mux_Stage[0].stage0" File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_32mux2to1.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file srg_program_memory.v
+    Info (12023): Found entity 1: srg_Program_Memory File: C:/Users/srgoo/Desktop/PersonalProjects/32_Bit_MIPS/32Bit_MIPS/srg_Program_Memory.v Line: 1
+Info (12127): Elaborating entity "srg_Program_Memory" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 229 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 67 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 129 logic cells
+Info (21057): Implemented 288 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 42 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 214 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Fri May 31 16:41:09 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Sat Jun 08 13:46:58 2019
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:35
 
 

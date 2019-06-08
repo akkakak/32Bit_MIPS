@@ -1,0 +1,15 @@
+module srg_Program_Memory (WriteReadn WriteData, clk, Address, ReadData);
+input WriteReadn clk; // if 1, write, if 0 read
+input [31:0] Address, WriteData;
+output [31:0] ReadData;
+reg [31:0] [7:0] ProgramMemory;
+
+always @(posedge clk)
+begin 
+	if( WriteReadn == 0)
+	begin
+		ReadData <= {ProgramMemory [Address] [7:0], ProgramMemory[Address+1] [7:0], ProgramMemory[Address+2] [7:0], ProgramMemory[Address+3] [7:0]};
+		end
+		end
+		endmodule
+	
